@@ -1,19 +1,23 @@
-# client
+# Создание телеграм-бота 
+# Стек:
+ - VueJS
+ - NodeJS (Express)
+ - Postgres
+ - node-telegram-bot-api
+ - UI - Materialize
+# Описание проекта
+В веб-интерфейсе можно создавать пользователей. После создания данные отправляются в БД и 
+приходит уведомление с id ползователя в telegram.
+# Боту можно давать некоторые команды:
+/help - описание
+/allusers - посмотреть количество пользователей
+/54 - по id пользователя (из БД) можно получить инфо
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# В проекте использовался конфигурационный файл .env:
+  - SERVER_PORT
+  - DB_NAME
+  - DB_USER
+  - DB_PASSWORD
+  - DB_HOST
+  - DB_PORT
+  - BOT_TOKEN
